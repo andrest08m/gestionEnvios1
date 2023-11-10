@@ -10,124 +10,148 @@ public class Envio {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
 
-    private int NumeroGuia;
-    private String Cliente;
 
-    private String CiudadOrigen;
-    private String CiudadDestino;
-    private String DireccionDestino;
+    private int EnvioId;
 
-    private String NombrePersonsRecibe;
-    private String NumeroPersonsRecibe;
+    private int EnvioNumeroGuia;
+    private String EnvioCliente;
 
-    private int HoraEntrega;
-    private String EstadoEnvio;
+    private int EnvioCedula;
+    private String EnvioCiudadOrigen;
+    private String EnvioCiudadDestino;
+    private String EnvioDireccionDestino;
 
-    private int ValorEnvio;
+    private String EnvioNombrePersonsRecibe;
+    private String EnvioNumeroPersonsRecibe;
 
-    private String Paquete;
+    private int EnvioHoraEntrega;
+    private String EnvioEstadoEnvio;
 
-    public Envio(int numeroGuia, String cliente, String ciudadOrigen, String ciudadDestino, String direccionDestino,
-                 String nombrePersonsRecibe, String numeroPersonsRecibe, int horaEntrega, String estadoEnvio,
-                 int valorEnvio, String paquete) {
-        NumeroGuia = numeroGuia;
-        Cliente = cliente;
-        CiudadOrigen = ciudadOrigen;
-        CiudadDestino = ciudadDestino;
-        DireccionDestino = direccionDestino;
-        NombrePersonsRecibe = nombrePersonsRecibe;
-        NumeroPersonsRecibe = numeroPersonsRecibe;
-        HoraEntrega = horaEntrega;
-        EstadoEnvio = estadoEnvio;
-        ValorEnvio = valorEnvio;
-        Paquete = paquete;
+    private int EnvioValorEnvio;
+
+    private String EnvioPaquete;
+
+
+    public Envio(int envioId, int envioNumeroGuia, String envioCliente, int envioCedula, String envioCiudadOrigen,
+                 String envioCiudadDestino, String envioDireccionDestino, String envioNombrePersonsRecibe,
+                 String envioNumeroPersonsRecibe, int envioHoraEntrega, String envioEstadoEnvio, int envioValorEnvio,
+                 String envioPaquete) {
+        EnvioId = envioId;
+        EnvioNumeroGuia = envioNumeroGuia;
+        EnvioCliente = envioCliente;
+        EnvioCedula = envioCedula;
+        EnvioCiudadOrigen = envioCiudadOrigen;
+        EnvioCiudadDestino = envioCiudadDestino;
+        EnvioDireccionDestino = envioDireccionDestino;
+        EnvioNombrePersonsRecibe = envioNombrePersonsRecibe;
+        EnvioNumeroPersonsRecibe = envioNumeroPersonsRecibe;
+        EnvioHoraEntrega = envioHoraEntrega;
+        EnvioEstadoEnvio = envioEstadoEnvio;
+        EnvioValorEnvio = envioValorEnvio;
+        EnvioPaquete = envioPaquete;
     }
 
-    public int getNumeroGuia() {
-        return NumeroGuia;
+    public int getEnvioId() {
+        return EnvioId;
     }
 
-    public void setNumeroGuia(int numeroGuia) {
-        NumeroGuia = numeroGuia;
+    public void setEnvioId(int envioId) {
+        EnvioId = envioId;
     }
 
-    public String getCliente() {
-        return Cliente;
+    public int getEnvioNumeroGuia() {
+        return EnvioNumeroGuia;
     }
 
-    public void setCliente(String cliente) {
-        Cliente = cliente;
+    public void setEnvioNumeroGuia(int envioNumeroGuia) {
+        EnvioNumeroGuia = envioNumeroGuia;
     }
 
-    public String getCiudadOrigen() {
-        return CiudadOrigen;
+    public String getEnvioCliente() {
+        return EnvioCliente;
     }
 
-    public void setCiudadOrigen(String ciudadOrigen) {
-        CiudadOrigen = ciudadOrigen;
+    public void setEnvioCliente(String envioCliente) {
+        EnvioCliente = envioCliente;
     }
 
-    public String getCiudadDestino() {
-        return CiudadDestino;
+    public int getEnvioCedula() {
+        return EnvioCedula;
     }
 
-    public void setCiudadDestino(String ciudadDestino) {
-        CiudadDestino = ciudadDestino;
+    public void setEnvioCedula(int envioCedula) {
+        EnvioCedula = envioCedula;
     }
 
-    public String getDireccionDestino() {
-        return DireccionDestino;
+    public String getEnvioCiudadOrigen() {
+        return EnvioCiudadOrigen;
     }
 
-    public void setDireccionDestino(String direccionDestino) {
-        DireccionDestino = direccionDestino;
+    public void setEnvioCiudadOrigen(String envioCiudadOrigen) {
+        EnvioCiudadOrigen = envioCiudadOrigen;
     }
 
-    public String getNombrePersonsRecibe() {
-        return NombrePersonsRecibe;
+    public String getEnvioCiudadDestino() {
+        return EnvioCiudadDestino;
     }
 
-    public void setNombrePersonsRecibe(String nombrePersonsRecibe) {
-        NombrePersonsRecibe = nombrePersonsRecibe;
+    public void setEnvioCiudadDestino(String envioCiudadDestino) {
+        EnvioCiudadDestino = envioCiudadDestino;
     }
 
-    public String getNumeroPersonsRecibe() {
-        return NumeroPersonsRecibe;
+    public String getEnvioDireccionDestino() {
+        return EnvioDireccionDestino;
     }
 
-    public void setNumeroPersonsRecibe(String numeroPersonsRecibe) {
-        NumeroPersonsRecibe = numeroPersonsRecibe;
+    public void setEnvioDireccionDestino(String envioDireccionDestino) {
+        EnvioDireccionDestino = envioDireccionDestino;
     }
 
-    public int getHoraEntrega() {
-        return HoraEntrega;
+    public String getEnvioNombrePersonsRecibe() {
+        return EnvioNombrePersonsRecibe;
     }
 
-    public void setHoraEntrega(int horaEntrega) {
-        HoraEntrega = horaEntrega;
+    public void setEnvioNombrePersonsRecibe(String envioNombrePersonsRecibe) {
+        EnvioNombrePersonsRecibe = envioNombrePersonsRecibe;
     }
 
-    public String getEstadoEnvio() {
-        return EstadoEnvio;
+    public String getEnvioNumeroPersonsRecibe() {
+        return EnvioNumeroPersonsRecibe;
     }
 
-    public void setEstadoEnvio(String estadoEnvio) {
-        EstadoEnvio = estadoEnvio;
+    public void setEnvioNumeroPersonsRecibe(String envioNumeroPersonsRecibe) {
+        EnvioNumeroPersonsRecibe = envioNumeroPersonsRecibe;
     }
 
-    public int getValorEnvio() {
-        return ValorEnvio;
+    public int getEnvioHoraEntrega() {
+        return EnvioHoraEntrega;
     }
 
-    public void setValorEnvio(int valorEnvio) {
-        ValorEnvio = valorEnvio;
+    public void setEnvioHoraEntrega(int envioHoraEntrega) {
+        EnvioHoraEntrega = envioHoraEntrega;
     }
 
-    public String getPaquete() {
-        return Paquete;
+    public String getEnvioEstadoEnvio() {
+        return EnvioEstadoEnvio;
     }
 
-    public void setPaquete(String paquete) {
-        Paquete = paquete;
+    public void setEnvioEstadoEnvio(String envioEstadoEnvio) {
+        EnvioEstadoEnvio = envioEstadoEnvio;
+    }
+
+    public int getEnvioValorEnvio() {
+        return EnvioValorEnvio;
+    }
+
+    public void setEnvioValorEnvio(int envioValorEnvio) {
+        EnvioValorEnvio = envioValorEnvio;
+    }
+
+    public String getEnvioPaquete() {
+        return EnvioPaquete;
+    }
+
+    public void setEnvioPaquete(String envioPaquete) {
+        EnvioPaquete = envioPaquete;
     }
 }

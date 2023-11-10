@@ -10,72 +10,95 @@ public class Empleado {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
 
-    private int cedula;
-    private String Nombre;
-    private String Apellido ;
-    private int Celular;
-    private String Correo;
-    private String Direccion;
-    private String Ciudad;
+    private int Empleadocedula;
+    private String EmpleadoNombre;
+    private String EmpleadoApellido ;
+    private int EmpleadoCelular;
+    private String EmpleadoCorreo;
+    private String EmpleadoDireccion;
+    private String EmpleadoCiudad;
 
-    private String Antiguedas;
+    private String EmpleadoAntigueda;
     private String Rh;
     private String TipoEmpleado;
 
-    public String getNombre() {
-        return Nombre;
+    public Empleado(int empleadocedula, String empleadoNombre, String empleadoApellido, int empleadoCelular,
+                    String empleadoCorreo, String empleadoDireccion, String empleadoCiudad, String empleadoAntigueda,
+                    String rh, String tipoEmpleado) {
+        Empleadocedula = empleadocedula;
+        EmpleadoNombre = empleadoNombre;
+        EmpleadoApellido = empleadoApellido;
+        EmpleadoCelular = empleadoCelular;
+        EmpleadoCorreo = empleadoCorreo;
+        EmpleadoDireccion = empleadoDireccion;
+        EmpleadoCiudad = empleadoCiudad;
+        EmpleadoAntigueda = empleadoAntigueda;
+        Rh = rh;
+        TipoEmpleado = tipoEmpleado;
     }
 
-    public void setNombre(String nombre) {
-        Nombre = nombre;
+    public int getEmpleadocedula() {
+        return Empleadocedula;
     }
 
-    public String getApellido() {
-        return Apellido;
+    public void setEmpleadocedula(int empleadocedula) {
+        Empleadocedula = empleadocedula;
     }
 
-    public void setApellido(String apellido) {
-        Apellido = apellido;
+    public String getEmpleadoNombre() {
+        return EmpleadoNombre;
     }
 
-    public int getCelular() {
-        return Celular;
+    public void setEmpleadoNombre(String empleadoNombre) {
+        EmpleadoNombre = empleadoNombre;
     }
 
-    public void setCelular(int celular) {
-        Celular = celular;
+    public String getEmpleadoApellido() {
+        return EmpleadoApellido;
     }
 
-    public String getCorreo() {
-        return Correo;
+    public void setEmpleadoApellido(String empleadoApellido) {
+        EmpleadoApellido = empleadoApellido;
     }
 
-    public void setCorreo(String correo) {
-        Correo = correo;
+    public int getEmpleadoCelular() {
+        return EmpleadoCelular;
     }
 
-    public String getDireccion() {
-        return Direccion;
+    public void setEmpleadoCelular(int empleadoCelular) {
+        EmpleadoCelular = empleadoCelular;
     }
 
-    public void setDireccion(String direccion) {
-        Direccion = direccion;
+    public String getEmpleadoCorreo() {
+        return EmpleadoCorreo;
     }
 
-    public String getCiudad() {
-        return Ciudad;
+    public void setEmpleadoCorreo(String empleadoCorreo) {
+        EmpleadoCorreo = empleadoCorreo;
     }
 
-    public void setCiudad(String ciudad) {
-        Ciudad = ciudad;
+    public String getEmpleadoDireccion() {
+        return EmpleadoDireccion;
     }
 
-    public String getAntiguedas() {
-        return Antiguedas;
+    public void setEmpleadoDireccion(String empleadoDireccion) {
+        EmpleadoDireccion = empleadoDireccion;
     }
 
-    public void setAntiguedas(String antiguedas) {
-        Antiguedas = antiguedas;
+    public String getEmpleadoCiudad() {
+        return EmpleadoCiudad;
+    }
+
+    public void setEmpleadoCiudad(String empleadoCiudad) {
+        EmpleadoCiudad = empleadoCiudad;
+    }
+
+    public String getEmpleadoAntigueda() {
+        return EmpleadoAntigueda;
+    }
+
+    public void setEmpleadoAntigueda(String empleadoAntigueda) {
+        EmpleadoAntigueda = empleadoAntigueda;
     }
 
     public String getRh() {
@@ -92,30 +115,5 @@ public class Empleado {
 
     public void setTipoEmpleado(String tipoEmpleado) {
         TipoEmpleado = tipoEmpleado;
-    }
-
-    public int getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
-    }
-
-    public Empleado(String nombre, String apellido, int celular, String correo, String direccion, String ciudad,
-                    String antiguedas, String rh, String tipoEmpleado, int cedula) {
-        Nombre = nombre;
-        Apellido = apellido;
-        Celular = celular;
-        Correo = correo;
-        Direccion = direccion;
-        Ciudad = ciudad;
-        Antiguedas = antiguedas;
-        Rh = rh;
-        TipoEmpleado = tipoEmpleado;
-        this.cedula = cedula;
-
-
-
     }
 }

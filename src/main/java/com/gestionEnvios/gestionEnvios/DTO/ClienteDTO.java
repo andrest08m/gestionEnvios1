@@ -3,82 +3,82 @@ package com.gestionEnvios.gestionEnvios.DTO;
 public class ClienteDTO {
 
 
-    private int Cedula;
-    private String Nombre;
-    private String Apellido;
-    private int Celular;
-    private String Correo;
-    private String Direccion;
-    private String Ciudad;
+    private int  ClienteCedulaDTO;
+    private String  ClienteNombreDTO;
+    private String  ClienteApellidoDTO;
+    private int  ClienteCelularDTO;
+    private String  ClienteCorreoDTO;
+    private String  ClienteDireccionDTO;
+    private String  ClienteCiudadDTO;
 
     public ClienteDTO() {
     }
 
-    public ClienteDTO(int cedula, String nombre, String apellido, int celular, String correo, String direccion,
-                      String ciudad) {
-        Cedula = cedula;
-        Nombre = nombre;
-        Apellido = apellido;
-        Celular = celular;
-        Correo = correo;
-        Direccion = direccion;
-        Ciudad = ciudad;
+    public ClienteDTO(int clienteCedulaDTO, String clienteNombreDTO, String clienteApellidoDTO, int clienteCelularDTO,
+                      String clienteCorreoDTO, String clienteDireccionDTO, String clienteCiudadDTO) {
+        ClienteCedulaDTO = clienteCedulaDTO;
+        ClienteNombreDTO = clienteNombreDTO;
+        ClienteApellidoDTO = clienteApellidoDTO;
+        ClienteCelularDTO = clienteCelularDTO;
+        ClienteCorreoDTO = clienteCorreoDTO;
+        ClienteDireccionDTO = clienteDireccionDTO;
+        ClienteCiudadDTO = clienteCiudadDTO;
     }
 
-    public int getCedula() {
-        return Cedula;
+    public int getClienteCedulaDTO() {
+        return ClienteCedulaDTO;
     }
 
-    public void setCedula(int cedula) {
-        Cedula = cedula;
+    public void setClienteCedulaDTO(int clienteCedulaDTO) {
+        ClienteCedulaDTO = clienteCedulaDTO;
     }
 
-    public String getNombre() {
-        return Nombre;
+    public String getClienteNombreDTO() {
+        return ClienteNombreDTO;
     }
 
-    public void setNombre(String nombre) {
-        Nombre = nombre;
+    public void setClienteNombreDTO(String clienteNombreDTO) {
+        ClienteNombreDTO = clienteNombreDTO;
     }
 
-    public String getApellido() {
-        return Apellido;
+    public String getClienteApellidoDTO() {
+        return ClienteApellidoDTO;
     }
 
-    public void setApellido(String apellido) {
-        Apellido = apellido;
+    public void setClienteApellidoDTO(String clienteApellidoDTO) {
+        ClienteApellidoDTO = clienteApellidoDTO;
     }
 
-    public int getCelular() {
-        return Celular;
+    public int getClienteCelularDTO() {
+        return ClienteCelularDTO;
     }
 
-    public void setCelular(int celular) {
-        Celular = celular;
+    public void setClienteCelularDTO(int clienteCelularDTO) {
+        ClienteCelularDTO = clienteCelularDTO;
     }
 
-    public String getCorreo() {
-        return Correo;
+    public String getClienteCorreoDTO() {
+        return ClienteCorreoDTO;
     }
 
-    public void setCorreo(String correo) {
-        Correo = correo;
+    public void setClienteCorreoDTO(String clienteCorreoDTO) {
+        ClienteCorreoDTO = clienteCorreoDTO;
     }
 
-    public String getDireccion() {
-        return Direccion;
+    public String getClienteDireccionDTO() {
+        return ClienteDireccionDTO;
     }
 
-    public void setDireccion(String direccion) {
-        Direccion = direccion;
+    public void setClienteDireccionDTO(String clienteDireccionDTO) {
+        ClienteDireccionDTO = clienteDireccionDTO;
     }
 
-    public String getCiudad() {
-        return Ciudad;
+    public String getClienteCiudadDTO() {
+        return ClienteCiudadDTO;
     }
 
-    public void setCiudad(String ciudad) {
-        Ciudad = ciudad;
+    public void setClienteCiudadDTO(String clienteCiudadDTO) {
+        ClienteCiudadDTO = clienteCiudadDTO;
     }
 }
 

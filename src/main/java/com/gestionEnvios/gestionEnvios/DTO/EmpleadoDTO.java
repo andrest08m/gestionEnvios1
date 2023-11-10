@@ -2,13 +2,13 @@ package com.gestionEnvios.gestionEnvios.DTO;
 
 public class EmpleadoDTO {
 
-    private int cedula;
-    private String Nombre;
-    private String Apellido ;
-    private int Celular;
-    private String Correo;
-    private String Direccion;
-    private String Ciudad;
+    private int EmpleadoDTOcedula;
+    private String EmpleadoDTONombre;
+    private String EmpleadoDTOApellido;
+    private int EmpleadoDTOCelular;
+    private String EmpleadoDTOCorreo;
+    private String EmpleadoDTODireccion;
+    private String EmpleadoDTOCiudad;
 
     private String Antiguedas;
     private String Rh;
@@ -17,74 +17,75 @@ public class EmpleadoDTO {
     public EmpleadoDTO() {
     }
 
-    public EmpleadoDTO(int cedula, String nombre, String apellido, int celular, String correo, String direccion,
-                       String ciudad, String antiguedas, String rh, String tipoEmpleado) {
-        this.cedula = cedula;
-        Nombre = nombre;
-        Apellido = apellido;
-        Celular = celular;
-        Correo = correo;
-        Direccion = direccion;
-        Ciudad = ciudad;
+    public EmpleadoDTO(int empleadoDTOcedula, String empleadoDTONombre, String empleadoDTOApellido,
+                       int empleadoDTOCelular, String empleadoDTOCorreo, String empleadoDTODireccion,
+                       String empleadoDTOCiudad, String antiguedas, String rh, String tipoEmpleado) {
+        EmpleadoDTOcedula = empleadoDTOcedula;
+        EmpleadoDTONombre = empleadoDTONombre;
+        EmpleadoDTOApellido = empleadoDTOApellido;
+        EmpleadoDTOCelular = empleadoDTOCelular;
+        EmpleadoDTOCorreo = empleadoDTOCorreo;
+        EmpleadoDTODireccion = empleadoDTODireccion;
+        EmpleadoDTOCiudad = empleadoDTOCiudad;
         Antiguedas = antiguedas;
         Rh = rh;
         TipoEmpleado = tipoEmpleado;
     }
 
-    public int getCedula() {
-        return cedula;
+    public int getEmpleadoDTOcedula() {
+        return EmpleadoDTOcedula;
     }
 
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
+    public void setEmpleadoDTOcedula(int empleadoDTOcedula) {
+        EmpleadoDTOcedula = empleadoDTOcedula;
     }
 
-    public String getNombre() {
-        return Nombre;
+    public String getEmpleadoDTONombre() {
+        return EmpleadoDTONombre;
     }
 
-    public void setNombre(String nombre) {
-        Nombre = nombre;
+    public void setEmpleadoDTONombre(String empleadoDTONombre) {
+        EmpleadoDTONombre = empleadoDTONombre;
     }
 
-    public String getApellido() {
-        return Apellido;
+    public String getEmpleadoDTOApellido() {
+        return EmpleadoDTOApellido;
     }
 
-    public void setApellido(String apellido) {
-        Apellido = apellido;
+    public void setEmpleadoDTOApellido(String empleadoDTOApellido) {
+        EmpleadoDTOApellido = empleadoDTOApellido;
     }
 
-    public int getCelular() {
-        return Celular;
+    public int getEmpleadoDTOCelular() {
+        return EmpleadoDTOCelular;
     }
 
-    public void setCelular(int celular) {
-        Celular = celular;
+    public void setEmpleadoDTOCelular(int empleadoDTOCelular) {
+        EmpleadoDTOCelular = empleadoDTOCelular;
     }
 
-    public String getCorreo() {
-        return Correo;
+    public String getEmpleadoDTOCorreo() {
+        return EmpleadoDTOCorreo;
     }
 
-    public void setCorreo(String correo) {
-        Correo = correo;
+    public void setEmpleadoDTOCorreo(String empleadoDTOCorreo) {
+        EmpleadoDTOCorreo = empleadoDTOCorreo;
     }
 
-    public String getDireccion() {
-        return Direccion;
+    public String getEmpleadoDTODireccion() {
+        return EmpleadoDTODireccion;
     }
 
-    public void setDireccion(String direccion) {
-        Direccion = direccion;
+    public void setEmpleadoDTODireccion(String empleadoDTODireccion) {
+        EmpleadoDTODireccion = empleadoDTODireccion;
     }
 
-    public String getCiudad() {
-        return Ciudad;
+    public String getEmpleadoDTOCiudad() {
+        return EmpleadoDTOCiudad;
     }
 
-    public void setCiudad(String ciudad) {
-        Ciudad = ciudad;
+    public void setEmpleadoDTOCiudad(String empleadoDTOCiudad) {
+        EmpleadoDTOCiudad = empleadoDTOCiudad;
     }
 
     public String getAntiguedas() {

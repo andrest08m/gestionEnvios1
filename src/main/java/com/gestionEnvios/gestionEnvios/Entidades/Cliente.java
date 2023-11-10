@@ -11,76 +11,94 @@ public class Cliente {
     @Column(nullable = false, updatable = false)
 
 
-    private int Cedula;
-    private String Nombre;
-    private String Apellido ;
-    private int Celular;
-    private String Correo;
-    private String Direccion;
-    private String Ciudad;
+    private int ClienteCedula;
+    private int ClienteNumeroGuia;
+    private String ClienteNombre;
+    private String ClienteApellido;
+    private int ClienteCelular;
+    private String ClienteCorreo;
+    private String ClienteDireccion;
+    private String ClienteCiudad;
 
-    public Cliente(String nombre,int cedula,String apellido, int celular, String correo, String direccion, String ciudad) {
-        Nombre = nombre;
-        Apellido = apellido;
-        Celular = celular;
-        Correo = correo;
-        Direccion = direccion;
-        Ciudad = ciudad;
+    public Cliente(int clienteCedula, int clienteNumeroGuia, String clienteNombre, String clienteApellido,
+                   int clienteCelular, String clienteCorreo, String clienteDireccion, String clienteCiudad) {
+        ClienteCedula = clienteCedula;
+        ClienteNumeroGuia = clienteNumeroGuia;
+        ClienteNombre = clienteNombre;
+        ClienteApellido = clienteApellido;
+        ClienteCelular = clienteCelular;
+        ClienteCorreo = clienteCorreo;
+        ClienteDireccion = clienteDireccion;
+        ClienteCiudad = clienteCiudad;
     }
 
-    public String getNombre() {
-        return Nombre;
+    public Cliente() {
+
     }
 
-    public void setNombre(String nombre) {
-        Nombre = nombre;
+    public int getClienteCedula() {
+        return ClienteCedula;
     }
 
-    public String getApellido() {
-        return Apellido;
+    public void setClienteCedula(int clienteCedula) {
+        ClienteCedula = clienteCedula;
     }
 
-    public void setApellido(String apellido) {
-        Apellido = apellido;
+    public int getClienteNumeroGuia() {
+        return ClienteNumeroGuia;
     }
 
-    public int getCelular() {
-        return Celular;
+    public void setClienteNumeroGuia(int clienteNumeroGuia) {
+        ClienteNumeroGuia = clienteNumeroGuia;
     }
 
-    public void setCelular(int celular) {
-        Celular = celular;
+    public String getClienteNombre() {
+        return ClienteNombre;
     }
 
-    public String getCorreo() {
-        return Correo;
+    public void setClienteNombre(String clienteNombre) {
+        ClienteNombre = clienteNombre;
     }
 
-    public void setCorreo(String correo) {
-        Correo = correo;
+    public String getClienteApellido() {
+        return ClienteApellido;
     }
 
-    public String getDireccion() {
-        return Direccion;
+    public void setClienteApellido(String clienteApellido) {
+        ClienteApellido = clienteApellido;
     }
 
-    public void setDireccion(String direccion) {
-        Direccion = direccion;
+    public int getClienteCelular() {
+        return ClienteCelular;
     }
 
-    public String getCiudad() {
-        return Ciudad;
+    public void setClienteCelular(int clienteCelular) {
+        ClienteCelular = clienteCelular;
     }
 
-    public void setCiudad(String ciudad) {
-        Ciudad = ciudad;
+    public String getClienteCorreo() {
+        return ClienteCorreo;
     }
 
-    public int getCedula() {
-        return Cedula;
+    public void setClienteCorreo(String clienteCorreo) {
+        ClienteCorreo = clienteCorreo;
     }
 
-    public void setCedula(int cedula) {
-        Cedula = cedula;
+    public String getClienteDireccion() {
+        return ClienteDireccion;
+    }
+
+    public void setClienteDireccion(String clienteDireccion) {
+        ClienteDireccion = clienteDireccion;
+    }
+
+    public String getClienteCiudad() {
+        return ClienteCiudad;
+    }
+
+    public void setClienteCiudad(String clienteCiudad) {
+        ClienteCiudad = clienteCiudad;
     }
 }
+
+

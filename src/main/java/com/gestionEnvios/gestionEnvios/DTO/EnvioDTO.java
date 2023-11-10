@@ -1,127 +1,127 @@
 package com.gestionEnvios.gestionEnvios.DTO;
 
 public class EnvioDTO {
-    private int NumeroGuia;
-    private String Cliente;
+    private int EnvioDTONumeroGuia;
+    private String EnvioDTOCliente;
 
-    private String CiudadOrigen;
-    private String CiudadDestino;
-    private String DireccionDestino;
+    private String EnvioDTOCiudadOrigen;
+    private String EnvioDTOCiudadDestino;
+    private String EnvioDTODireccionDestino;
 
-    private String NombrePersonsRecibe;
-    private String NumeroPersonsRecibe;
+    private String EnvioDTONombrePersonsRecibe;
+    private String EnvioDTONumeroPersonsRecibe;
 
-    private int HoraEntrega;
-    private String EstadoEnvio;
+    private int EnvioDTOHoraEntrega;
+    private String EnvioDTOEstadoEnvio;
 
-    private int ValorEnvio;
+    private int EnvioDTOValorEnvio;
 
-    private String Paquete;
+    private String EnvioDTOPaquete;
 
     public EnvioDTO() {
     }
 
-    public EnvioDTO(int numeroGuia, String cliente, String ciudadOrigen, String ciudadDestino, String direccionDestino,
-                    String nombrePersonsRecibe, String numeroPersonsRecibe, int horaEntrega, String estadoEnvio,
-                    int valorEnvio, String paquete) {
-        NumeroGuia = numeroGuia;
-        Cliente = cliente;
-        CiudadOrigen = ciudadOrigen;
-        CiudadDestino = ciudadDestino;
-        DireccionDestino = direccionDestino;
-        NombrePersonsRecibe = nombrePersonsRecibe;
-        NumeroPersonsRecibe = numeroPersonsRecibe;
-        HoraEntrega = horaEntrega;
-        EstadoEnvio = estadoEnvio;
-        ValorEnvio = valorEnvio;
-        Paquete = paquete;
+    public EnvioDTO(int envioDTONumeroGuia, String envioDTOCliente, String envioDTOCiudadOrigen, String envioDTOCiudadDestino,
+                    String envioDTODireccionDestino, String envioDTONombrePersonsRecibe, String envioDTONumeroPersonsRecibe,
+                    int envioDTOHoraEntrega, String envioDTOEstadoEnvio, int envioDTOValorEnvio, String envioDTOPaquete) {
+        EnvioDTONumeroGuia = envioDTONumeroGuia;
+        EnvioDTOCliente = envioDTOCliente;
+        EnvioDTOCiudadOrigen = envioDTOCiudadOrigen;
+        EnvioDTOCiudadDestino = envioDTOCiudadDestino;
+        EnvioDTODireccionDestino = envioDTODireccionDestino;
+        EnvioDTONombrePersonsRecibe = envioDTONombrePersonsRecibe;
+        EnvioDTONumeroPersonsRecibe = envioDTONumeroPersonsRecibe;
+        EnvioDTOHoraEntrega = envioDTOHoraEntrega;
+        EnvioDTOEstadoEnvio = envioDTOEstadoEnvio;
+        EnvioDTOValorEnvio = envioDTOValorEnvio;
+        EnvioDTOPaquete = envioDTOPaquete;
     }
 
-    public int getNumeroGuia() {
-        return NumeroGuia;
+    public int getEnvioDTONumeroGuia() {
+        return EnvioDTONumeroGuia;
     }
 
-    public void setNumeroGuia(int numeroGuia) {
-        NumeroGuia = numeroGuia;
+    public void setEnvioDTONumeroGuia(int envioDTONumeroGuia) {
+        EnvioDTONumeroGuia = envioDTONumeroGuia;
     }
 
-    public String getCliente() {
-        return Cliente;
+    public String getEnvioDTOCliente() {
+        return EnvioDTOCliente;
     }
 
-    public void setCliente(String cliente) {
-        Cliente = cliente;
+    public void setEnvioDTOCliente(String envioDTOCliente) {
+        EnvioDTOCliente = envioDTOCliente;
     }
 
-    public String getCiudadOrigen() {
-        return CiudadOrigen;
+    public String getEnvioDTOCiudadOrigen() {
+        return EnvioDTOCiudadOrigen;
     }
 
-    public void setCiudadOrigen(String ciudadOrigen) {
-        CiudadOrigen = ciudadOrigen;
+    public void setEnvioDTOCiudadOrigen(String envioDTOCiudadOrigen) {
+        EnvioDTOCiudadOrigen = envioDTOCiudadOrigen;
     }
 
-    public String getCiudadDestino() {
-        return CiudadDestino;
+    public String getEnvioDTOCiudadDestino() {
+        return EnvioDTOCiudadDestino;
     }
 
-    public void setCiudadDestino(String ciudadDestino) {
-        CiudadDestino = ciudadDestino;
+    public void setEnvioDTOCiudadDestino(String envioDTOCiudadDestino) {
+        EnvioDTOCiudadDestino = envioDTOCiudadDestino;
     }
 
-    public String getDireccionDestino() {
-        return DireccionDestino;
+    public String getEnvioDTODireccionDestino() {
+        return EnvioDTODireccionDestino;
     }
 
-    public void setDireccionDestino(String direccionDestino) {
-        DireccionDestino = direccionDestino;
+    public void setEnvioDTODireccionDestino(String envioDTODireccionDestino) {
+        EnvioDTODireccionDestino = envioDTODireccionDestino;
     }
 
-    public String getNombrePersonsRecibe() {
-        return NombrePersonsRecibe;
+    public String getEnvioDTONombrePersonsRecibe() {
+        return EnvioDTONombrePersonsRecibe;
     }
 
-    public void setNombrePersonsRecibe(String nombrePersonsRecibe) {
-        NombrePersonsRecibe = nombrePersonsRecibe;
+    public void setEnvioDTONombrePersonsRecibe(String envioDTONombrePersonsRecibe) {
+        EnvioDTONombrePersonsRecibe = envioDTONombrePersonsRecibe;
     }
 
-    public String getNumeroPersonsRecibe() {
-        return NumeroPersonsRecibe;
+    public String getEnvioDTONumeroPersonsRecibe() {
+        return EnvioDTONumeroPersonsRecibe;
     }
 
-    public void setNumeroPersonsRecibe(String numeroPersonsRecibe) {
-        NumeroPersonsRecibe = numeroPersonsRecibe;
+    public void setEnvioDTONumeroPersonsRecibe(String envioDTONumeroPersonsRecibe) {
+        EnvioDTONumeroPersonsRecibe = envioDTONumeroPersonsRecibe;
     }
 
-    public int getHoraEntrega() {
-        return HoraEntrega;
+    public int getEnvioDTOHoraEntrega() {
+        return EnvioDTOHoraEntrega;
     }
 
-    public void setHoraEntrega(int horaEntrega) {
-        HoraEntrega = horaEntrega;
+    public void setEnvioDTOHoraEntrega(int envioDTOHoraEntrega) {
+        EnvioDTOHoraEntrega = envioDTOHoraEntrega;
     }
 
-    public String getEstadoEnvio() {
-        return EstadoEnvio;
+    public String getEnvioDTOEstadoEnvio() {
+        return EnvioDTOEstadoEnvio;
     }
 
-    public void setEstadoEnvio(String estadoEnvio) {
-        EstadoEnvio = estadoEnvio;
+    public void setEnvioDTOEstadoEnvio(String envioDTOEstadoEnvio) {
+        EnvioDTOEstadoEnvio = envioDTOEstadoEnvio;
     }
 
-    public int getValorEnvio() {
-        return ValorEnvio;
+    public int getEnvioDTOValorEnvio() {
+        return EnvioDTOValorEnvio;
     }
 
-    public void setValorEnvio(int valorEnvio) {
-        ValorEnvio = valorEnvio;
+    public void setEnvioDTOValorEnvio(int envioDTOValorEnvio) {
+        EnvioDTOValorEnvio = envioDTOValorEnvio;
     }
 
-    public String getPaquete() {
-        return Paquete;
+    public String getEnvioDTOPaquete() {
+        return EnvioDTOPaquete;
     }
 
-    public void setPaquete(String paquete) {
-        Paquete = paquete;
+    public void setEnvioDTOPaquete(String envioDTOPaquete) {
+        EnvioDTOPaquete = envioDTOPaquete;
     }
 }
