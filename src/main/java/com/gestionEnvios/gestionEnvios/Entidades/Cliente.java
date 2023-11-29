@@ -2,6 +2,8 @@ package com.gestionEnvios.gestionEnvios.Entidades;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 
 @Entity
@@ -19,6 +21,12 @@ public class Cliente {
     private String ClienteCorreo;
     private String ClienteDireccion;
     private String ClienteCiudad;
+
+
+    @OneToOne
+    @JsonIgnore
+    @JoinColumn(name = "Envio")
+    private Envio envio;
 
     public Cliente(int CLiente_id, int clienteCedula, int clienteNumeroGuia,
                    String clienteNombre, String clienteApellido, int clienteCelular, String clienteCorreo,

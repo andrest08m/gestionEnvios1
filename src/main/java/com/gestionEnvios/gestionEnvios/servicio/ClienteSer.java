@@ -1,5 +1,4 @@
 package com.gestionEnvios.gestionEnvios.servicio;
-
 import com.gestionEnvios.gestionEnvios.DTO.ClienteDTO;
 import com.gestionEnvios.gestionEnvios.Entidades.Cliente;
 import com.gestionEnvios.gestionEnvios.Entidades.Envio;
@@ -14,32 +13,35 @@ import java.util.List;
 @Service
 public class ClienteSer {
 
-    @Autowired
-    ClienteRepo clienteRepo;
+    private final ClienteRepo clienteRepo;
+    private final EnvioReepo envioRepo;
 
     @Autowired
-    EnvioReepo envioReepo;
+    public ClienteSer(ClienteRepo clienteRepo, EnvioReepo envioRepo) {
+        this.clienteRepo = clienteRepo;
+        this.envioRepo = envioRepo;
+    }
 
-    public List<Cliente> getAllBookings() {
+    public List<Cliente> getAllClientes() {
         return clienteRepo.findAll();
     }
 
     public ResponseEntity<String> crearCliente(ClienteDTO clienteDTO) {
         Cliente cliente = mapFromDTO(clienteDTO);
-        List<Envio> envios = envioReepo.findAll();
+        List<Envio> envios = envioRepo.findAll();
 
-        for (Envio Envio : envios) {
-            if (Envio.getEnvioNumeroGuia() == cliente.getClienteCedula()) {
-                cliente.setClienteNumeroGuia(Envio.getEnvioId());
+        for (Envio envio : envios) {
+            if (envio.getEnvioNumeroGuia() == cliente.getClienteCedula()) {
+                cliente.setClienteNumeroGuia(envio.getEnvioId());
             }
         }
 
         clienteRepo.save(cliente);
 
-        return ResponseEntity.status(201).body("cliente creado");
+        return ResponseEntity.status(201).body("Cliente creado");
     }
 
-    public ClienteDTO mapDTO(Cliente cliente) {
+    public ClienteDTO mapToDTO(Cliente cliente) {
         ClienteDTO clienteDTO = new ClienteDTO();
 
         clienteDTO.setClienteApellidoDTO(cliente.getClienteApellido());
@@ -48,7 +50,7 @@ public class ClienteSer {
         clienteDTO.setClienteCorreoDTO(cliente.getClienteCorreo());
         clienteDTO.setClienteDireccionDTO(cliente.getClienteDireccion());
         clienteDTO.setClienteNombreDTO(cliente.getClienteNombre());
-        clienteDTO.setClienteApellidoDTO(cliente.getClienteApellido());
+
         return clienteDTO;
     }
 
@@ -61,14 +63,9 @@ public class ClienteSer {
         cliente.setClienteCorreo(clienteDTO.getClienteCorreoDTO());
         cliente.setClienteDireccion(clienteDTO.getClienteDireccionDTO());
         cliente.setClienteNombre(clienteDTO.getClienteNombreDTO());
-        cliente.setClienteApellido(clienteDTO.getClienteApellidoDTO());
-
 
         return cliente;
     }
-
-
-
 
 
 }

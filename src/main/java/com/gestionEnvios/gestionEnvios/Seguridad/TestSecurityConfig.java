@@ -15,7 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Profile("test")
 public class TestSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Override
+
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/**").permitAll()
@@ -24,7 +24,7 @@ public class TestSecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable();
     }
 
-    @Override
+
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
@@ -34,7 +34,7 @@ public class TestSecurityConfig extends WebSecurityConfigurerAdapter {
                 .roles("ADMIN");
     }
 
-    @Override
+
     @Bean
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();

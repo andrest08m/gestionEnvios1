@@ -23,14 +23,9 @@ public class ClienteControler{
         this.ClienteServicelmp = customerServicelmp;
     }
 
-    @GetMapping("")
-    public List<Cliente> getAllBookings() {
-        return this.ClienteServicelmp.getAllBookings();
-    }
-
 
     @PostMapping("")
-    public ResponseEntity<String> createCustomer(@RequestBody ClienteDTO cliente) {
+    public ResponseEntity<String> crearCliente(@RequestBody ClienteDTO cliente) {
         try {
             return this.ClienteServicelmp.crearCliente(cliente);
         } catch (Exception e) {
