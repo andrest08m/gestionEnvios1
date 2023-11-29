@@ -24,7 +24,7 @@ public class ClienteSer {
         return clienteRepo.findAll();
     }
 
-    public ResponseEntity<String> createCustomerDTO(ClienteDTO clienteDTO) {
+    public ResponseEntity<String> crearCliente(ClienteDTO clienteDTO) {
         Cliente cliente = mapFromDTO(clienteDTO);
         List<Envio> envios = envioReepo.findAll();
 
@@ -72,5 +72,3 @@ public class ClienteSer {
 
 
 }
-
-

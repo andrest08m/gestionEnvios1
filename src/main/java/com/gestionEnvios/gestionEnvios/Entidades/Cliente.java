@@ -1,6 +1,7 @@
 package com.gestionEnvios.gestionEnvios.Entidades;
 
 
+
 import javax.persistence.*;
 
 @Entity
@@ -9,8 +10,7 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-
-
+    private  int CLiente_id;
     private int ClienteCedula;
     private int ClienteNumeroGuia;
     private String ClienteNombre;
@@ -20,8 +20,10 @@ public class Cliente {
     private String ClienteDireccion;
     private String ClienteCiudad;
 
-    public Cliente(int clienteCedula, int clienteNumeroGuia, String clienteNombre, String clienteApellido,
-                   int clienteCelular, String clienteCorreo, String clienteDireccion, String clienteCiudad) {
+    public Cliente(int CLiente_id, int clienteCedula, int clienteNumeroGuia,
+                   String clienteNombre, String clienteApellido, int clienteCelular, String clienteCorreo,
+                   String clienteDireccion, String clienteCiudad) {
+        this.CLiente_id = CLiente_id;
         ClienteCedula = clienteCedula;
         ClienteNumeroGuia = clienteNumeroGuia;
         ClienteNombre = clienteNombre;
@@ -98,6 +100,14 @@ public class Cliente {
 
     public void setClienteCiudad(String clienteCiudad) {
         ClienteCiudad = clienteCiudad;
+    }
+
+    public int getCLiente_id() {
+        return CLiente_id;
+    }
+
+    public void setCLiente_id(int CLiente_id) {
+        this.CLiente_id = CLiente_id;
     }
 }
 
