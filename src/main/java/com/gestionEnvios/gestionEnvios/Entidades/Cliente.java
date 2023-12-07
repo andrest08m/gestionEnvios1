@@ -5,13 +5,15 @@ package com.gestionEnvios.gestionEnvios.Entidades;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
-
 @Entity
 @Table(name = "Cliente")
 public class Cliente {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, updatable = false)
+    @Column(nullable  = false , updatable = false)
+
+
     private  int CLiente_id;
     private int ClienteCedula;
     private int ClienteNumeroGuia;
@@ -25,8 +27,10 @@ public class Cliente {
 
     @OneToOne
     @JsonIgnore
-    @JoinColumn(name = "Envio")
+    @JoinColumn (name = "envio")
     private Envio envio;
+
+
 
     public Cliente(int CLiente_id, int clienteCedula, int clienteNumeroGuia,
                    String clienteNombre, String clienteApellido, int clienteCelular, String clienteCorreo,

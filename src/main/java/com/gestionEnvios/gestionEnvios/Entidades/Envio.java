@@ -2,6 +2,7 @@ package com.gestionEnvios.gestionEnvios.Entidades;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "Envio")
@@ -9,8 +10,6 @@ public class Envio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-
-
     private int EnvioId;
 
     private int EnvioNumeroGuia;
@@ -31,6 +30,10 @@ public class Envio {
 
     private String EnvioPaquete;
 
+
+    @OneToOne
+    @JoinColumn(name = "cliente", nullable = false)
+    private Cliente cliente;
 
     public Envio(int envioId, int envioNumeroGuia, String envioCliente, int envioCedula, String envioCiudadOrigen,
                  String envioCiudadDestino, String envioDireccionDestino, String envioNombrePersonsRecibe,
