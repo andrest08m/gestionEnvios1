@@ -11,27 +11,30 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/v1/cliente")
-public class ClienteControler{
+public class ClienteControler {
 
 
     @Autowired
     ClienteSer ClienteServicelmp;
 
 
-
     public ClienteControler(ClienteSer customerServicelmp) {
         this.ClienteServicelmp = customerServicelmp;
     }
 
-
-    @PostMapping("")
-    public ResponseEntity<String> crearCliente(@RequestBody ClienteDTO cliente) {
-        try {
-            return this.ClienteServicelmp.crearCliente(cliente);
-        } catch (Exception e) {
-            return ResponseEntity.internalServerError().build();
-        }
+    @GetMapping("")
+    public List<Cliente> getAllBookings() {
+        return this.ClienteServicelmp.getAllClientes();
     }
 
+        @PostMapping("")
+        public ResponseEntity<String> crearCliente (@RequestBody ClienteDTO cliente){
+            try {
+                return this.ClienteServicelmp.crearCliente(cliente);
+            } catch (Exception e) {
+                return ResponseEntity.internalServerError().build();
+            }
+        }
 
-}
+
+    }

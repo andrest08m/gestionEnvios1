@@ -39,6 +39,8 @@ public class Envio {
                  String envioCiudadDestino, String envioDireccionDestino, String envioNombrePersonsRecibe,
                  String envioNumeroPersonsRecibe, int envioHoraEntrega, String envioEstadoEnvio, int envioValorEnvio,
                  String envioPaquete) {
+
+
         EnvioId = envioId;
         EnvioNumeroGuia = envioNumeroGuia;
         EnvioCliente = envioCliente;

@@ -35,7 +35,9 @@ public class Cliente {
     public Cliente(int CLiente_id, int clienteCedula, int clienteNumeroGuia,
                    String clienteNombre, String clienteApellido, int clienteCelular, String clienteCorreo,
                    String clienteDireccion, String clienteCiudad) {
-        this.CLiente_id = CLiente_id;
+
+
+        CLiente_id = CLiente_id;
         ClienteCedula = clienteCedula;
         ClienteNumeroGuia = clienteNumeroGuia;
         ClienteNombre = clienteNombre;
